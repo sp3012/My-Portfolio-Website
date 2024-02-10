@@ -249,6 +249,7 @@ section {
     background-color: rgb(103, 103, 163);
     cursor: pointer;
 }
+
 .btn-color-2:hover {
     background-color: grey;
     border: black 1px solid;
@@ -282,7 +283,8 @@ section {
 
 /* about details container*/
 
-.about-containers, .about-details-container {
+.about-containers,
+.about-details-container {
     display: flex;
 }
 
@@ -337,10 +339,10 @@ section {
 
 /* about me detail */
 
-.text-container {  
-    display: flex; 
+.text-container {
+    display: flex;
     text-align: justify;
-   
+
 }
 
 /* Experience */
@@ -388,40 +390,86 @@ article .icon {
     cursor: default;
 }
 
+
+
+
+
 /* Projects */
 
 #projects {
     position: relative;
 }
 
-.color-container {
-    border-color: chartreuse;
-    background: rgb(252, 252, 252);
+.project-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    max-width: fit-content;
 }
 
-.project-img {
-    border-radius: 2rem;
+.card-container {
+    display: flex;
+    flex-direction: column;
+    max-height: fit-content;
+    justify-content: center;
+    align-items: center;
+    border: 0.1rem solid greenyellow;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container img {
     width: 90%;
-    height: 90%;
+    border-radius: 1.5rem;
 }
 
-.project-title {
-    margin: 1rem;
-    color: black;
+.project-headline {
+    text-align: center;
 }
 
-.project-btn {
-    color: black;
-    border-color: chartreuse;
+h3 {
+    font-weight: bolder;
+    margin: 1rem 0;
 }
+
+.btn-box {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.button {
+    padding: 0.5rem 1rem;
+    border-radius: 1.7rem;
+    border: 0.1rem solid grey;
+    cursor: pointer;
+    background-color: azure;
+}
+
+.button:hover {
+    background-color: aquamarine;
+    color: black;
+    font-weight: 400;
+}
+
+
+
 
 /* CONTACT */
 
-#contact{
+#contact {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 70vh;
+    height: 45vh;
 }
 
 .contact-info-upper-container {
@@ -435,7 +483,7 @@ article .icon {
     padding: 0.5rem;
 }
 
-.contact-info-container{
+.contact-info-container {
     display: flex;
     align-items: center;
     justify-content: center;

@@ -50,6 +50,27 @@
     .about-containers {
         margin-top: 0;
     }
+
+    /* #about {
+        margin-top: 4rem;
+    } */
+
+    .card-container img {
+        width: 150px;
+    }
+
+    .project-main {
+        flex-wrap: wrap;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .button {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -128,14 +149,21 @@
     .contact-info-upper-container {
         margin-bottom: 0.5rem;
     }
-}
 
-@media screen and (max-width: 637px) {
-    .contact-info-upper-container{
-        flex-wrap: wrap;
+    .img-container img {
+        width: 90%;
     }
 
-    .contact-info-container {
-        font-size: 0.85rem;
+    h3 {
+        font-size: 1.65rem;
+    }
+
+    .button {
+        padding: 0.6rem 1.4rem;
+        font-size: 1rem;
+        border-radius: 1.75rem;
+        border-color: grey;
     }
 }
+
+
