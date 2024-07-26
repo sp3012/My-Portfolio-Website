@@ -1,18 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <!-- nav bar for desktop -->
 
-    <nav id="desktop-nav">
-      <div class="logo">Shubham Kumar</div>
-      <div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <!-- nav bar for desktop -->
+
+  <nav id="desktop-nav">
+    <div class="logo">Shubham Kumar</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- nav bar for mobile display -->
+
+  <nav id="hamburger-nav">
+    <div class="logo">Shubham Kumar</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Project</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Profile Section -->
+
+  <section id="profile">
+    <div class="section-pic-container">
+      <img src="./assets/myphoto.png" alt="Shubham Profile Picture" />
+    </div>
+
+    <div class="section-text">
+      <p class="section-text-p1">Hello I'm</p>
+      <h1 class="title">Shubham Kumar</h1>
+      <p class="section-text-p2">Frontend Developer</p>
+
+      <div class="btn-container">
+        <button class="btn btn-color-1" onclick="window.open('./assets/resume.pdf')">
+          Download CV
+        </button>
+
+        <button class="btn btn-color-2" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+
+      <div class="social-container">
+        <img src="./assets/linkdin2.png" alt="My linkedin Profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/shubham-kumar-649b63161/'" />
+
+        <img src="./assets/github.png" alt="My Github Profile" class="icon2"
+          onclick="location.href='https://github.com/sp3012'" />
+
+        <img src="./assets/instagram.png" alt="My Instagram Profile" class="icon"
+          onclick="location.href='https://www.instagram.com/shubham_singh4_0?igsh=cmk5N2NqODNvYnN6'" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About section -->
+
+  <section id="about">
+    <p class="section-text-p1">Get to know more</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <!-- <div class="section-about-pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile Picture"
+            class="about-pic"
+          />
+        </div> -->
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>
+              Developed 4 Projects <br />
+              <br />
+              Responsive Amazon website's UI clone, To do web App, News app
+              with the help of API, and this portfolio website.
+            </p>
+          </div>
+
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Eductaion icon" class="icon" />
+            <h3>Eductaion</h3>
+            <p>
+              B.Tech (Electrical) (2019) <br />Galgotias College of Engg. &
+              Tech. Greater Noida.
+            </p>
+            <br />
+            <p>12th (2014) & 10th (2012) <br />JNV Bijnor UP</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            As a budding frontend developer, I bring a fervent passion for
+            crafting engaging user interfaces with a blend of HTML, CSS, and
+            JavaScript. Eager to dive into the world of modern frameworks like
+            React.js and Angular. Quick learner, collaborative team member,
+            and driven problem-solver, I am committed to continuous growth in
+            the ever-evolving field of web development.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+
+  <!-- Experience Section -->
+
+  <section id="experience">
+    <p class="section-text-p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>React.Js</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Python</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Tailwind</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Git</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+
+  <!-- Projects -->
+
+  <section id="projects">
+    <p class="section-text-p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+
+    <div class="project-main">
+      <!-- project 1 -->
+
+      <div class="card-container">
+        <div class="img-container">
+          <img src="./assets/shopping.png" alt="Project image" />
+        </div>
+
+        <div class="project-desc">
+          <div class="project-headline">
+            <h3>Amazon's UI Clone</h3>
+          </div>
+          <div class="btn-box">
+            <button class="button" onclick="location.href='https://github.com/sp3012/Amazon-Clone'">
+              Github
+            </button>
+            <button class="button" onclick="location.href='https://inquisitive-otter-895071.netlify.app/#'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- project 2 -->
+
+      <div class="card-container">
+        <div class="img-container">
+          <img src="./assets/todo.png" alt="Project image" />
+        </div>
+
+        <div class="project-desc">
+          <div class="project-headline">
+            <h3>To do list Web App</h3>
+          </div>
+          <div class="btn-box">
+            <button class="button" onclick="location.href='https://github.com/sp3012/To-Do-App'">
+              Github
+            </button>
+            <button class="button" onclick="location.href='https://fabulous-semifreddo-f6e47e.netlify.app'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- project 3 -->
+
+      <div class="card-container">
+        <div class="img-container">
+          <img src="./assets/news.png" alt="Project image" />
+        </div>
+
+        <div class="project-desc">
+          <div class="project-headline">
+            <h3>News App using API</h3>
+          </div>
+          <div class="btn-box">
+            <button class="button" onclick="location.href='https://github.com/sp3012/News-Web-App'">
+              Github
+            </button>
+            <button class="button" onclick="location.href='https://elegant-figolla-c9ed48.netlify.app'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- project 4 -->
+
+      <div class="card-container">
+        <div class="img-container">
+          <img src="./assets/portfolio.png" alt="Project image" />
+        </div>
+
+        <div class="project-desc">
+          <div class="project-headline">
+            <h3>Portfolio Website</h3>
+          </div>
+          <div class="btn-box">
+            <button class="button" onclick="location.href='https://github.com/sp3012/My-Portfolio-Website'">
+              Github
+            </button>
+            <button class="button" onclick="location.href='https://inquisitive-pika-c07c71.netlify.app'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- project 5 -->
+
+     
+      <!-- Project 6 -->
+
+    
+
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+
+  <!-- Contact section -->
+
+  <section id="contact">
+    <p class="section-text-p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon" />
+        <p>
+          <a href="mailto:kumarshubham3012@gmail.com">kumarshubham3012@gmail.com</a>
+        </p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkdin2.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p>
+          <a href="https://www.linkedin.com/in/shubham-kumar-649b63161/">LinkedIn</a>
+        </p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/call.png" alt="Email icon" class="icon contact-icon" />
+        <p>
+          9720015836
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <nav>
+      <div class="nav-links-container">
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
@@ -21,424 +340,10 @@
         </ul>
       </div>
     </nav>
+    <p>Copyright &#169; 2024 Shubham Kumar. All Rights Reserved.</p>
+  </footer>
 
-    <!-- nav bar for mobile display -->
+  <script src="./script.js"></script>
+</body>
 
-    <nav id="hamburger-nav">
-      <div class="logo">Shubham Kumar</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Project</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Profile Section -->
-
-    <section id="profile">
-      <div class="section-pic-container">
-        <img src="./assets/myphoto.png" alt="Shubham Profile Picture" />
-      </div>
-
-      <div class="section-text">
-        <p class="section-text-p1">Hello I'm</p>
-        <h1 class="title">Shubham Kumar</h1>
-        <p class="section-text-p2">Frontend Developer</p>
-
-        <div class="btn-container">
-          <button
-            class="btn btn-color-1"
-            onclick="window.open('./assets/resume.pdf')"
-          >
-            Download CV
-          </button>
-
-          <button class="btn btn-color-2" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-
-        <div class="social-container">
-          <img
-            src="./assets/linkdin2.png"
-            alt="My linkedin Profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/shubham-kumar-649b63161/'"
-          />
-
-          <img
-            src="./assets/github.png"
-            alt="My Github Profile"
-            class="icon2"
-            onclick="location.href='https://github.com/sp3012'"
-          />
-
-          <img
-            src="./assets/instagram.png"
-            alt="My Instagram Profile"
-            class="icon"
-            onclick="location.href='https://www.instagram.com/shubham_singh4_0?igsh=cmk5N2NqODNvYnN6'"
-          />
-        </div>
-      </div>
-    </section>
-
-    <!-- About section -->
-
-    <section id="about">
-      <p class="section-text-p1">Get to know more</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <!-- <div class="section-about-pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile Picture"
-            class="about-pic"
-          />
-        </div> -->
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>
-                Developed 4 Projects <br />
-                <br />
-                Responsive Amazon website's UI clone, To do web App, News app
-                with the help of API, and this portfolio website.
-              </p>
-            </div>
-
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Eductaion icon"
-                class="icon"
-              />
-              <h3>Eductaion</h3>
-              <p>
-                B.Tech (Electrical) (2019) <br />Galgotias College of Engg. &
-                Tech. Greater Noida.
-              </p>
-              <br />
-              <p>12th (2014) & 10th (2012) <br />JNV Bijnor UP</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              As a budding frontend developer, I bring a fervent passion for
-              crafting engaging user interfaces with a blend of HTML, CSS, and
-              JavaScript. Eager to dive into the world of modern frameworks like
-              React.js and Angular. Quick learner, collaborative team member,
-              and driven problem-solver, I am committed to continuous growth in
-              the ever-evolving field of web development.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-
-    <!-- Experience Section -->
-
-    <section id="experience">
-      <p class="section-text-p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>React.Js</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Tailwind</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-
-    <!-- Projects -->
-
-    <section id="projects">
-      <p class="section-text-p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-
-      <div class="project-main">
-        <!-- project 1 -->
-
-        <div class="card-container">
-          <div class="img-container">
-            <img src="./assets/shopping.png" alt="Project image" />
-          </div>
-
-          <div class="project-desc">
-            <div class="project-headline">
-              <h3>Amazon's UI Clone</h3>
-            </div>
-            <div class="btn-box">
-              <button
-                class="button"
-                onclick="location.href='https://github.com/sp3012/Amazon-Clone'"
-              >
-                Github
-              </button>
-              <button
-                class="button"
-                onclick="location.href='https://reliable-biscochitos-6a85df.netlify.app/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- project 2 -->
-
-        <div class="card-container">
-          <div class="img-container">
-            <img src="./assets/todo.png" alt="Project image" />
-          </div>
-
-          <div class="project-desc">
-            <div class="project-headline">
-              <h3>To do list Web App</h3>
-            </div>
-            <div class="btn-box">
-              <button
-                class="button"
-                onclick="location.href='https://github.com/sp3012/To-Do-App'"
-              >
-                Github
-              </button>
-              <button
-                class="button"
-                onclick="location.href='https://fabulous-semifreddo-f6e47e.netlify.app'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- project 3 -->
-
-        <div class="card-container">
-          <div class="img-container">
-            <img src="./assets/news.png" alt="Project image" />
-          </div>
-
-          <div class="project-desc">
-            <div class="project-headline">
-              <h3>News App using API</h3>
-            </div>
-            <div class="btn-box">
-              <button
-                class="button"
-                onclick="location.href='https://github.com/sp3012/News-Web-App'"
-              >
-                Github
-              </button>
-              <button
-                class="button"
-                onclick="location.href='https://elegant-figolla-c9ed48.netlify.app'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- project 4 -->
-
-        <div class="card-container">
-          <div class="img-container">
-            <img src="./assets/portfolio.png" alt="Project image" />
-          </div>
-
-          <div class="project-desc">
-            <div class="project-headline">
-              <h3>Portfolio Website</h3>
-            </div>
-            <div class="btn-box">
-              <button
-                class="button"
-                onclick="location.href='https://github.com/sp3012/My-Portfolio-Website'"
-              >
-                Github
-              </button>
-              <button
-                class="button"
-                onclick="location.href='https://inquisitive-pika-c07c71.netlify.app'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-
-    <!-- Contact section -->
-
-    <section id="contact">
-      <p class="section-text-p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon"
-          />
-          <p>
-            <a href="mailto:kumarshubham3012@gmail.com"
-              >kumarshubham3012@gmail.com</a
-            >
-          </p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkdin2.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p>
-            <a href="https://www.linkedin.com/in/shubham-kumar-649b63161/"
-              >LinkedIn</a
-            >
-          </p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/call.png"
-            alt="Email icon"
-            class="icon contact-icon"
-          />
-          <p>
-            9720015836
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Project</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2024 Shubham Kumar. All Rights Reserved.</p>
-    </footer>
-
-    <script src="./script.js"></script>
-  </body>
 </html>
